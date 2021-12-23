@@ -1,0 +1,126 @@
+a:link,
+a:visited {
+    color: wheat;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(201, 139, 86);
+    text-decoration: underline;
+}
+
+a:active {
+    color: pink;
+    text-decoration: underline;
+}
+
+.box {
+    margin: 20px;
+    background-clip: padding-box;
+    /* ระยะของ bg */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.overlay {
+    position: absolute;
+    /* ตำแหน่งลอยๆ ทับอันอื่นได้ */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    /* ค่อยๆขึ้นค่อยๆเลื่อน */
+    visibility: hidden;
+    /* ปกติจะไม่เห็น */
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    /* กดแล้วเห็น */
+    opacity: 1;
+    /* transparent(โปร่งใส)ขนาดไหน (หาย)0-1(ชัด) */
+}
+
+.popup {
+    /* ตกแต่งตัว popup */
+    margin: 70px auto;
+    padding: 30px;
+    background: rgb(41, 18, 0);
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    /* ตำแหน่งแบบแก้ตำแหน่งได้ */
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: rgb(201, 139, 86);
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 28px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(201, 139, 86);
+}
+
+.popup .close:hover {
+    color: rgba(245, 222, 179, 0.733);
+}
+
+.popup .content {
+    font-family: Arial, sans-serif;
+    max-height: 70%;
+    overflow: auto;
+    font-size: 18px;
+    color: rgba(245, 222, 179, 0.733);
+    padding-right: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    color: rgb(201, 139, 86);
+}
+
+#htp,
+#htp td {
+    border: 1px solid rgba(184, 175, 161, 0.733);
+    font-size: 18px;
+    color: rgba(245, 222, 179, 0.733);
+    border-spacing: 0px;
+    padding: 15px;
+}
+
+#htp {
+    border-radius: 5px;
+}
+
+
+/*---------------------------------------- Scrollbar of content in popup ----------------------------------------*/
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    /*box-shadow: เงาข้างใน เงาซ้าย+/ขวา- เงาบน+/ล่าง- ขนาดเบลอ สี;*/
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    /* ต้ว Scrollbar ที่เลื่อนๆ */
+    background: rgb(201, 139, 86);
+    border-radius: 10px;
+}
