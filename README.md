@@ -1,3 +1,3 @@
 # YAHTZEE
-MUSC js project
-https://boardgame-online-yahtzee-ae3ca.firebaseapp.com/
+MUSC js project <br>
+Let's play >> https://boardgame-online-yahtzee-ae3ca.firebaseapp.com/
