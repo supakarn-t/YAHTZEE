@@ -15,6 +15,7 @@ a:active {
 }
 
 .box {
+    position: absolute;
     margin: 20px;
     background-clip: padding-box;
     /* ระยะของ bg */
@@ -50,7 +51,7 @@ a:active {
     margin: 70px auto;
     padding: 30px;
     background: rgb(41, 18, 0);
-    border-radius: 5px;
+    border-radius: 20px;
     width: 50%;
     position: relative;
     /* ตำแหน่งแบบแก้ตำแหน่งได้ */
@@ -60,7 +61,7 @@ a:active {
 .popup h2 {
     margin-top: 0;
     color: rgb(201, 139, 86);
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 }
 
@@ -80,7 +81,7 @@ a:active {
 }
 
 .popup .content {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     max-height: 70%;
     overflow: auto;
     font-size: 18px;
@@ -103,7 +104,25 @@ a:active {
 }
 
 #htp {
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .popup h2 {
+        font-size: 26px;
+    }
+    .popup {
+        width: 70%;
+    }
+    .popup .content {
+        font-size: 15px;
+    }
+    #htp {
+        width: 100%;
+    }
+    #htp td {
+        font-size: 15px;
+    }
 }
 
 
