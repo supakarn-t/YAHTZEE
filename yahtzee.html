@@ -11,14 +11,15 @@
 </head>
 
 <body onload='newGame()'>
-    <div class="box">
-        <a href="#popup1">How To Play</a>
+    <div id="hhh">
+        <h1>YAHTZEE</h1>
+        <div class="box">
+            <a href="#popup1">How To Play</a>
+        </div>
     </div>
 
-
-    <h1>YAHTZEE</h1>
-
     <center>
+        <br><br><br><br>
         <table id="score-sheet">
             <tr>
                 <th class="th1" colspan="4">SCORE SHEET</th>
@@ -60,7 +61,7 @@
                 <td><input type='button' class='score' name='lowerScoring' id='yahtzeeDisplay' value='0' onclick='recordTurn(11)'></td>
             </tr>
             <tr>
-                <th class='th2' id="upperTotal" style="background-color: peru">Total (Upper Section)</th>
+                <th class='th2' id="upperTotal" style="background-color: peru">Total (Upper)</th>
                 <td style="background-color: peru">
                     <div align='center' name='scoreDisplay' id='upperTotalDisplay'></div>
                 </td>
@@ -72,7 +73,7 @@
                 <td style="background-color: #e2a85c;">
                     <div align='center' name='scoreDisplay' id='bonusDisplay'></div>
                 </td>
-                <th class='th2' id="lowerTotal" style="background-color: peru">Total(Lower Section)</th>
+                <th class='th2' id="lowerTotal" style="background-color: peru">Total(Lower)</th>
                 <td style="background-color: peru">
                     <div align='center' name='scoreDisplay' id='lowerTotalDisplay'></div>
                 </td>
@@ -89,7 +90,7 @@
         <table id="area-dice">
             <div id='countRound'></div>
             <tr>
-                <td style='color: rgb(243, 215, 162); font: size 40px;'>POOL</td>
+                <td id="dtname" style='color: rgb(243, 215, 162); font: size 40px;'>POOL</td>
                 <td>
                     <image name='dicePool' class='button-dice' src='pics/dice0.png' onclick='lockDie(1)'></image>
                 </td>
@@ -108,7 +109,7 @@
 
             </tr>
             <tr>
-                <td style='color: rgb(243, 215, 162); font: size 40px;'>KEEPER</td>
+                <td id="dtname" style='color: rgb(243, 215, 162); font: size 40px;'>KEEPER</td>
                 <td>
                     <image name='diceScore' class='button-dice' src='pics/dice0.png' onclick='unlockDie(1)'></image>
                 </td>
@@ -140,9 +141,8 @@
             <h2>How To Play</h2>
             <a class="close" href="#">×</a>
             <div class='content'>
-                13 Rounds played. In each round, 3 rolls are permitted. For each roll, roll dice in 'POOL' space. Player can keep some (or all) of the dice in 'KEEPER' space, by clicking at the specific 'POOL' dice you want to keep. Player can also return the dice from
-                'KEEPER' back to 'POOL' by clicking at the specific 'POOL' dice you want to return. If result is satisfying (or has rolled 3 times already), select ,by clicking, one of scoring type, either one at upper section (the left section of score
-                sheet) or another at lower section (the right of score sheet). The chosen scoring type is not available for the rest of the game.
+                - 13 Rounds played. <br><br> - In each round, 3 rolls are permitted. For each roll, roll dice in 'POOL' space. Player can keep some (or all) of the dice in 'KEEPER' space, by clicking at the specific 'POOL' dice you want to keep. <br><br>                - Player can also return the dice from 'KEEPER' back to 'POOL' by clicking at the specific 'POOL' dice you want to return. <br><br> - If result is satisfying (or has rolled 3 times already), select ,by clicking, one of scoring type, either
+                one at upper section (the left section of score sheet) or another at lower section (the right of score sheet). <br><br> - The chosen scoring type is not available for the rest of the game.
                 <br><br>
                 <h3> Scoring Type </h3>
                 <table id="htp">
